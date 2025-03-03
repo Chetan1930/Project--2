@@ -310,11 +310,93 @@ button:hover {
 
 
 
-
-.why-choose{
-    border: 3px dashed blue;
-    
+.why-choose-tts {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
 }
+
+.why-choose-tts h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.features-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.feature {
+    flex: 0 0 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 0 10px;
+}
+
+.feature .icon {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    display: block;
+    color: #f07167; /* Matching the provided color */
+}
+
+.feature h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #f07167; /* Matching the provided color */
+}
+
+.feature p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f07167;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: #d65a50; /* Darker shade for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature {
+        margin: 0 5px;
+    }
+}
+
+
 
 
 .services{
