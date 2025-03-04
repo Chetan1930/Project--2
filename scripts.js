@@ -42,3 +42,33 @@ nextButton.addEventListener("click", () => {
     showFeature(currentIndex);
   }
 });
+
+
+
+
+// code for siding window for the slider
+new Swiper('.testimonial-slider', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+  },
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+
+  breakpoints: {
+      640: {
+          slidesPerView: 1,
+      },
+      768: {
+          slidesPerView: 2,
+      },
+      1024: {
+          slidesPerView: 2,
+      },
+  }
+});

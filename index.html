@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="TTS Website Design Services - Custom, Scalable, and Performance-Driven Web Solutions">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
+
     <!-- For Apple devices -->
     <link rel="apple-touch-icon" sizes="180x180" href="TTS logo.png">
 
@@ -23,7 +26,7 @@
     <header class="header">
         <nav id="navbar">
             <a href="#index.html">
-                <img src="TTS logo.png" alt="TTS logo" height="40" >
+                <img src="TTS logo.png" alt="TTS logo" >
             </a>
             <span class="hamburger">&#9776;</span>
             <ul class="nav-links">
@@ -158,51 +161,112 @@
 
 
     <!-- Core Services Section -->
-    <section class="services">
-        <h2>Our Core Services</h2>
-        <ul>
-            <li>📌 Custom Website Development – Stunning, tailor-made websites.</li>
-            <li>📌 E-commerce Solutions – Build, manage, and grow your online store.</li>
-            <li>📌 CMS Development – WordPress, Shopify, and more.</li>
-            <li>📌 Website Redesign & Optimization – Fresh, modern look.</li>
-            <li>📌 SEO & Digital Marketing – Improve visibility and attract customers.</li>
-        </ul>
-        <a href="#portfolio" class="cta-button">🔍 See All Services</a>
-    </section>
+    <div class="services">
+        <div class="slider-container">
+            <h2>Our Service</h2>
+            <h1>Professional Development Services <br> You can Choose From</h1>
+            <div class="swiper testimonial-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="https://dreamztech.com/blog/wp-content/uploads/2020/12/custom-web-development.jpg" alt="Therapy 1">
+                        <h3>Custom Website Development</h3>
+                        <p>Stunning, tailor-made websites designed to meet your unique business needs.</p>
+                        <a href="#">+ READ MORE</a>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="https://nigatsystems.com/uploads/img/service/1714181807-E-commerce-Nigat-Systems.jpg" alt="Therapy 2">
+                        <h3>E-commerce Solutions</h3>
+                        <p>Build, manage, and grow your online store with our expert e-commerce solutions.</p>
+                        <a href="#">+ READ MORE</a>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="https://mug.services/wp-content/uploads/2023/10/cms.jpeg" alt="Therapy 3">
+                        <h3>CMS Development</h3>
+                        <p>Custom CMS development for WordPress, Shopify, and other platforms.</p>
+                        <a href="#">+ READ MORE</a>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="https://digiadmultimedia.com/images/pageimage/pageImage1699011111.jpg" alt="Therapy 4">
+                        <h3>Website Redesign & Optimization</h3>
+                        <p>Give your website a fresh, modern look and optimize it for better performance.</p>
+                        <a href="#">+ READ MORE</a>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <img src="https://algorizon.com/wp-content/uploads/2024/09/seo.jpg" alt="Therapy 5">
+                        <h3>SEO & Digital Marketing</h3>
+                        <p>Improve your online visibility and attract more customers with our SEO and digital marketing services.</p>
+                        <a href="#">+ READ MORE</a>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+    
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
         <h2>Our Work & Success Stories</h2>
-        <ul>
-            <li>🖥️ Business Websites – Clean, professional, and engaging.</li>
-            <li>🛍️ E-commerce Platforms – Secure and scalable online stores.</li>
-            <li>🎨 Creative Portfolios – Showcasing unique artistic expressions.</li>
-        </ul>
-        <a href="#portfolio" class="cta-button">📂 View Our Portfolio</a>
-    </section>
+        <div class="portfolio-content">
+            <ul>
+                <li><span class="icon">🖥️</span> Business Websites – Clean, professional, and engaging.</li>
+                <li><span class="icon">🛍️</span> E-commerce Platforms – Secure and scalable online stores.</li>
+                <li><span class="icon">🎨</span> Creative Portfolios – Showcasing unique artistic expressions.</li>
+            </ul>
+            <a href="#portfolio" class="cta-button">
+                <span class="button-text">📂 View Our Portfolio</span>
+            </a>
+        </div>
+</section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <h2>What Our Clients Say</h2>
-        <blockquote>"TTS delivered exactly what we needed – a sleek and high-performing website. Our customer engagement has increased significantly!" — Client Name, Company</blockquote>
-        <blockquote>"Highly professional team! Our website is now lightning-fast and SEO-friendly. We’ve seen a boost in leads." — Client Name, Company</blockquote>
-        <a href="#reviews" class="cta-button">📢 Read More Reviews</a>
+        <div class="testimonial-container">
+            <blockquote>
+                <p>"TTS delivered exactly what we needed – a sleek and high-performing website. Our customer engagement has increased significantly!"</p>
+                <cite>— Client Name, Company</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Highly professional team! Our website is now lightning-fast and SEO-friendly. We’ve seen a boost in leads."</p>
+                <cite>— Client Name, Company</cite>
+            </blockquote>
+        </div>
+        <a href="#reviews" class="cta-button">
+            <span class="button-text">📢 Read More Reviews</span>
+        </a>
     </section>
+
+
+    
 
     <!-- Contact Section -->
     <footer id="contact">
-        <h2>Let’s Get Started!</h2>
-
+        <h2>Let's Get Started!</h2>
+    
         <div class="inside-footer">
             🚀 Turn Your Ideas into a Powerful Online Presence
-            <p><strong>Call Us:</strong> [Your Contact Number]</p>
-            <p><strong>Email:</strong> [Your Email]</p>
-            🌍 Visit: [Your Website URL]
-            <a href="#" class="cta-button">Get Started Now!</a>
+            <p><strong>Call Us:</strong> +91 87456 24325</p>
+            <p><strong>Email:</strong> admin@tts.com</p>
+            <p><strong>Visit: </strong><a href="#" style="text-decoration: none; color: white;">tts.com</a></p>
+            <a href="#" class="cta-button">
+                <span class="button-text">Get Started Now!</span>
+            </a>
         </div>
     </footer>
+    
 
     <!-- Link JavaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>

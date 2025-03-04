@@ -54,8 +54,8 @@ button:hover {
     padding: 0 20px;
 }
 
-.navbar a img {
-    height: 40px; /* Adjusted logo size */
+#navbar a img {
+    height: 2em; /* Adjusted logo size */
     border-radius: 50%; /* Make logo round */
 }
 
@@ -422,11 +422,18 @@ button:hover {
 }
 
 
+/* cta section ...that single button */
+
 
 .cta-section {
     padding: 60px 20px;
     background-color: #f9f9f9;
     text-align: center;
+}
+
+.cta-container:hover{
+    background-color: #db8c86;
+    transform: scale(1.07);
 }
 
 .cta-container {
@@ -477,67 +484,356 @@ button:hover {
 
 
 
+/* .services css form here onward---> */
 
-.services{
-    border: 3px dotted hotpink;
-    
+
+.services {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.slider-container {
+    width: 90%;
+    max-width: 1200px; /* Adjust for desired width */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: #1E1E1E; /* Dark Background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.Our{
+    color: #ff5f00;
+}
+
+.slider-container h1 {
+    font-size: 2em; /* Larger Heading */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.swiper-slide {
+    background-color: #fff; /* White Slide Background */
+    color: #333;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.swiper-slide h3 {
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.swiper-slide p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.swiper-slide a {
+   display: flex;                /* Use flexbox for layout */
+    align-items: center;        /* Vertically align items */
+    justify-content: center;   /* Horizontally align items */
+    color: #fff;
+    background-color: #ff5f00;  /* Orange Read More Button */
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.swiper-slide a img {
+    margin-right: 5px; /* Space between icon and text */
+    width: 20px;       /* Adjust icon size */
+    height: 20px;
+}
+
+/* Pagination Styles */
+.swiper-pagination {
+    position: static; /* Show pagination below the slider */
+    margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #D3D3D3; /* Light Gray Pagination Dots */
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FF5F00; /* Orange Active Dot */
 }
 
 
 
 
 
+/* .portfolio section css started from there ... */
+
+/* Portfolio Section Styles */
+.portfolio {
+    background-color: #f9f9f9; /* Light background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.portfolio-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.portfolio ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio li {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio li .icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: #FF5F00; /* Accent color for icons */
+}
+
+.portfolio .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF5F00; /* Primary button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio .cta-button:hover {
+    background-color: #d45d53; /* Darker shade for hover */
+}
+
+.portfolio .cta-button .button-text {
+    display: inline-block; /* Ensure proper spacing around the icon */
+    vertical-align: middle; /* Align the icon vertically */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 40px 10px;
+    }
+
+    .portfolio h2 {
+        font-size: 2em;
+    }
+
+    .portfolio li {
+        font-size: 1em;
+    }
+
+    .portfolio .cta-button {
+        font-size: 1em;
+        padding: 12px 24px;
+    }
+}
 
 
 
+/* what our cleient says */
 
 
+/* Testimonials Section Styles */
+.testimonials {
+    background-color: #fff; /* White background */
+    padding: 60px 20px;
+    text-align: center;
+}
 
+.testimonials h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
+.testimonial-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials blockquote {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    border-left: 5px solid #f07167; /* Accent color */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for quotes */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.testimonials blockquote p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.testimonials blockquote cite {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    color: #777;
+}
+
+.testimonials .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f07167; /* Primary button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.testimonials .cta-button:hover {
+    background-color: #d45d53; /* Darker shade for hover */
+}
+
+.testimonials .cta-button .button-text {
+    display: inline-block; /* Ensure proper spacing around the icon */
+    vertical-align: middle; /* Align the icon vertically */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 40px 10px;
+    }
+
+    .testimonials h2 {
+        font-size: 2em;
+    }
+
+    .testimonials blockquote {
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    .testimonials .cta-button {
+        font-size: 1em;
+        padding: 12px 24px;
+    }
+}
 
 
 
 
 /* Contact Section */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+/* Footer Styles */
+#contact {
+    background-color: #333; /* Dark background */
+    color: #fff;
+    padding: 50px 20px;
     text-align: center;
 }
 
-footer h2 {
-    font-size: 22px;
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-footer p {
-    margin-bottom: 10px;
+.inside-footer {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-footer .cta-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
+.inside-footer p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.inside-footer strong {
+    color: #f07167; /* Accent color */
+}
+
+#contact .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f07167; /* Accent button color */
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
+    font-size: 1.1em;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
-footer .cta-button:hover {
-    background-color: #0056b3;
+#contact .cta-button:hover {
+    background-color: #d9534f; /* Darker shade for hover */
 }
 
-
-/* Responsive Design */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .header, .hero, .why-choose, .services, .portfolio, .testimonials, footer {
-        padding: 10px;
+    #contact {
+        padding: 40px 10px;
     }
-    
-    .header h1, .hero h2, .why-choose h2, .services h2, .portfolio h2, .testimonials h2, footer h2 {
-        font-size: 18px;
+
+    #contact h2 {
+        font-size: 2em;
     }
-    
-    .header ul li, .hero ul li, .why-choose ul li, .services ul li, .portfolio ul li {
-        font-size: 14px;
+
+    .inside-footer p {
+        font-size: 1em;
+    }
+
+    #contact .cta-button {
+        font-size: 1em;
+        padding: 12px 24px;
     }
 }
